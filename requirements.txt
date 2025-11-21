@@ -1,0 +1,12 @@
+# Core dependencies (optional - script works with stdlib only)
+# These libraries provide enhanced functionality but are not required
+
+# For more robust HTTP requests (optional - falls back to urllib)
+requests>=2.31.0
+
+# For advanced log analysis and data manipulation (optional)
+# pandas>=2.0.0
+
+# For visualization in future enhancements (optional)
+# matplotlib>=3.7.0
+# plotly>=5.14.0

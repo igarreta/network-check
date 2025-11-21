@@ -1,0 +1,32 @@
+{
+  "monitoring": {
+    "gateway": "auto",
+    "dns_servers": [
+      "8.8.8.8",
+      "1.1.1.1",
+      "8.8.4.4"
+    ],
+    "http_endpoints": [
+      "https://www.google.com",
+      "https://www.cloudflare.com",
+      "https://www.amazon.com"
+    ],
+    "ping_count": 3,
+    "timeout_seconds": 5,
+    "log_directory": "./logs",
+    "log_retention_days": 30,
+    "hostname_for_logs": "auto"
+  },
+  "thresholds": {
+    "latency_warning_ms": 100,
+    "latency_critical_ms": 500,
+    "packet_loss_warning_pct": 5,
+    "packet_loss_critical_pct": 20
+  },
+  "advanced": {
+    "parallel_tests": true,
+    "verbose_logging": false,
+    "retry_on_failure": 1,
+    "enable_traceroute_on_failure": false
+  }
+}
